@@ -8,7 +8,7 @@ const entries = Object.fromEntries(glob.sync("./src/apps/*.ts")
     }))
 
 module.exports = {
-    mode: 'development',
+    //mode: 'development',
     target: 'es3',
     context: __dirname + "/",
     entry: entries,
@@ -16,7 +16,8 @@ module.exports = {
         filename: '[name].jsx',
         path: path.resolve(__dirname, 'dist'),
     },
-    devtool: 'inline-source-map',
+    //devtool: 'inline-source-map',
+    devtool: 'source-map',
     module: {
         rules: [
             {
@@ -31,5 +32,8 @@ module.exports = {
     },
     plugins: [
         new BomPlugin(true, /\.(tsx|ts|jsx|js|map)$/),
-    ]
+    ],
+    optimization: {
+        minimize: true,
+    },
 };

@@ -6,9 +6,9 @@
   "author": "A",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack -w",
-    "build": "webpack",
-    "start": ""
+    "dev": "webpack --mode=development --watch",
+    "build": "webpack --mode=production",
+    "start": "webpack --mode=development"
   },
   "dependencies": {
     "@types/node": "^15.12.4",
