@@ -4,7 +4,7 @@ const BomPlugin = require('webpack-utf8-bom');
 
 const entries = Object.fromEntries(glob.sync("./src/apps/*.ts")
     .map((key) => {
-        return [path.basename(key), path.resolve(__dirname, key)];
+        return [path.basename(key, path.extname(key)), path.resolve(__dirname, key)];
     }))
 
 module.exports = {
