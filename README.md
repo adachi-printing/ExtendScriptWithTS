@@ -11,7 +11,7 @@ importや型チェックなどのモダンな記法を使用して、ES3準拠�
 
 ## Getting Started / スタートガイド
 
-$ git clone https://github.com/adachi-printing/ExtendScriptWithTS.git
+$ git clone --mirror https://github.com/adachi-printing/ExtendScriptWithTS.git
 
 $ yarn install
 
