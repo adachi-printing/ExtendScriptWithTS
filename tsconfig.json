@@ -10,8 +10,15 @@
 
     /* Strict Type-Checking Options */
     "strict": true,                           /* Enable all strict type-checking options. */
-    "esModuleInterop": true,                   /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    "esModuleInterop": true,                  /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
     "sourceMap": false,
     "allowJs": false,
+
+    /*　reference types　*/　                   /* Uncomment the app you want to develop */
+    "types": [
+      "types-for-adobe/Illustrator/2015.3",
+      //"types-for-adobe/InDesign/2015.3",
+      //"types-for-adobe/Photoshop/2015.5",
+    ]
   }
 }

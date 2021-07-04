@@ -5,7 +5,6 @@
 ///											
 ///
 ////////////////////////////////////////////////////////////////
-/// <reference types="types-for-adobe/Illustrator/2015.3" />
 import "extendscript-es5-shim-ts"
 
 import alertTest from '../components/alert'

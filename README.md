@@ -21,6 +21,24 @@ $ yarn install
 
 ## Usage
 
+### tsconfigで目的とするアプリを指定する
+
+types[] 内を目的のアプリのみ残してコメントアウトしてください
+
+以下はIllustratorのスクリプトを開発する場合
+
+```json
+"types": [
+    "types-for-adobe/Illustrator/2015.3",
+    //"types-for-adobe/InDesign/2015.3",
+    //"types-for-adobe/Photoshop/2015.5",
+]
+```
+
+* InDesignではScriptUIと一部のクラスが重複しているため、ScriptUIのTypesが除外されています
+
+### エントリーポイントにスクリプトのmain functionを作成する
+
 src/apps直下のファイルがエントリーポイントになっています
 
 ビルドされた各スクリプトは/distのしたに出力されます
