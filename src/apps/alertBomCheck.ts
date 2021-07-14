@@ -5,6 +5,10 @@
 ///											
 ///
 ////////////////////////////////////////////////////////////////
+// @script "Alert Bom Check"
+// @strict on
+// @target "photoshop"
+// @targetengine "test"
 import "extendscript-es5-shim-ts"
 
 import alertTest from '../components/alert'
