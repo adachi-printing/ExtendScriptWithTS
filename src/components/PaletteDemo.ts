@@ -1,14 +1,3 @@
-interface MyPalette extends Window {
-    sliderPanel: Panel & {
-        slider: Slider;
-        edittext: EditText;
-    }
-    bottomGroup: Group & {
-        cancelButton: Button;
-        applyButton: Button;
-    }
-}
-
 export class PaletteDemo {
     public isShow = false;
     private w: MyPalette;
