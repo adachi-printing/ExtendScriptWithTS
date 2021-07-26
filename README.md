@@ -11,6 +11,7 @@ importや型チェックなどのモダンな記法を使用して、ES3準拠�
 
 ## Getting Started / スタートガイド
 
+```sh
 $ git clone https://github.com/adachi-printing/ExtendScriptWithTS.git [your_project_name]
 
 $ git remote set-url origin [your_repository]
@@ -18,6 +19,7 @@ $ git remote set-url origin [your_repository]
 $ git push
 
 $ yarn install
+```
 
 ## Usage
 
@@ -43,9 +45,13 @@ src/apps直下のファイルがエントリーポイントになっています
 
 ビルドされた各スクリプトは/distのしたに出力されます
 
-$ yarn dev 更新監視状態でwebpackを起動します
+```sh
+# 更新監視状態でwebpackを起動します
+$ yarn dev 
 
-$ yarn run build 最終形式で出力します
+#最終形式で出力します
+$ yarn run build 
+```
 
 ## License
 
